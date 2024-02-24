@@ -1,0 +1,36 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        title Найкращя Італьянська Піца В Нас PIZZAKU
+    body 
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main
+            section.popular-menu
+                p.section-name Popular Menu
+                p.info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+
+                .flex
+                    .card 
+                        img(src="img/popular_menu1.png", alt="")
+                        p.card-name Title Here
+                        p.card-info Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    .card 
+                        img(src="img/popular_menu2.png", alt="")
+                        p.card-name Title Here
+                        p.card-info Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    .card
+                        img(src="img/popular_menu3.png", alt="")
+                        p.card-name Title Here
+                        p.card-info Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        include components/footer.pug

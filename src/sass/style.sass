@@ -1,0 +1,52 @@
+@import helpers/vars
+@import helpers/mixins
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.flex 
+  display: flex
+
+.popular-menu
+  height: 100vh
+  background: url("../img/section_bg.jpg") no-repeat
+  background-size: cover
+  padding-top: 100px
+  .section-name
+    font-size: 62px
+    color: #fff
+    font-family: "Abril Fatface"
+    text-align: center
+    margin-bottom: 35px
+  .info
+    width: 800px
+    font-size: 25px
+    color: #fff
+    font-family: "Montserrat"
+    text-align: center
+    margin: auto
+    margin-bottom: 100px
+  .flex
+    justify-content: center
+    gap: 133px
+    margin: auto
+  .card
+    width: 20%
+    padding: 0 20px
+    text-align: center
+    img
+      margin-bottom: 20px
+    .card-name
+      font-size: 28px
+      color: #fff
+      font-weight: 700
+      font-family: "Montserrat"
+      margin-bottom: 25px
+    .card-info
+      font-size: 17px
+      color: #fff
+      font-family: "Montserrat"
+
+@import  components/header
+@import  components/footer

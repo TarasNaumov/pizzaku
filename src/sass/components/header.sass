@@ -1,0 +1,68 @@
+header
+  height: 100vh
+  padding-top: 50px
+  background: url("../img/header_bg.jpg") no-repeat
+  background-size: cover
+
+.header-and-footer-wrapper
+  max-width: 1300px
+  margin: auto
+
+.header-line
+  display: flex
+  align-items: center
+  margin-bottom: 170px
+  .menu
+    display: flex
+    gap: 60px
+    a
+      position: relative
+      font-size: 21px
+      color: #fff
+      font-family: "Montserrat"
+      text-decoration: none
+      &::before
+        content: ''
+        position: absolute
+        bottom: -5px
+        width: 0
+        height: 3px
+        transition: 0.3s
+        background-color: #fff
+      &:hover
+        &::before
+          width: 100%
+
+.logo
+  margin-right: 75px
+
+.header-info
+  h1
+    font-size: 89px
+    color: #fff
+    font-family: "Abril Fatface"
+    margin-bottom: 70px
+  p
+    width: 48%
+    font-size: 30px
+    color: #ffffff
+    font-weight: 400
+    font-family: "Montserrat"
+    margin-bottom: 50px
+  
+  a
+    display: inline-block
+    padding: 10px 70px
+    border-radius: 33px
+    transition: 0.3s
+    background-color: #fff
+    border: 2px solid #fff
+    font-size: 25px
+    text-transform: uppercase
+    text-decoration: none
+    color: #222
+    font-weight: 700
+    font-family: "Montserrat"
+    &:hover
+      background-color: #222
+      color: #fff
